@@ -1,0 +1,112 @@
+/* BeachList.css */
+
+.bl-container {
+  min-height: 100vh;
+  background-color: #ffe4e1;
+  display: flex;
+  flex-direction: column;
+}
+
+.bl-header {
+  background-color: #db7093;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.bl-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.bl-user {
+  display: flex;
+  align-items: center;
+}
+
+.bl-username {
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.bl-logout {
+  background-color: #ffffff;
+  color: #db7093;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bl-main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.bl-subtitle {
+  color: #c71585;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.bl-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bl-card {
+  background-color: #e6dbf0;
+  border: 2px solid #d1a2e5;
+  border-radius: 16px;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.bl-card:hover {
+  transform: scale(1.05);
+  background-color: #f0e7ff;
+}
+
+.bl-card-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a0072;
+  margin-bottom: 8px;
+}
+
+.bl-card-bookings {
+  font-size: 14px;
+  color: #4a0072;
+}
+
+.bl-closed {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+  cursor: default;
+}
+
+.bl-closed-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ffcccc;
+  color: #a70000;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
